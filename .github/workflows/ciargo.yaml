@@ -8,7 +8,7 @@ on:
 
 jobs:
   Deploy_On_Cluster:
-    name: Deploy Application On Cluster
+    name: Deploy Application On K8s Cluster
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo 
