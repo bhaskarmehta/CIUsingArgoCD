@@ -46,7 +46,7 @@ jobs:
           pwd
           cat Deployments/deployment.yml
           pwd
-          sed -i "s+bhasmeht/angular-image.*+bhasmeht/angular-image:$RUN_NUMBER+g" Deployments/
+          sed -i "s+bhasmeht/angular-image.*+bhasmeht/angular-image:$RUN_NUMBER+g" Deployments/deployment.yml
           # cat deployment.yml
           git add .
           git commit -m 'Done  by Github Actions   Job changemanifest: ${{ github.run_number }}'
