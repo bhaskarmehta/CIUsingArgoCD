@@ -44,7 +44,7 @@ jobs:
           git config user.email bhaskarmehta422@gmail.com
           git config user.name Bhaskar
           pwd
-          cat deployment.yml
+          cat Deployments/deployment.yml
           pwd
           sed -i "s+bhasmeht/angular-image.*+bhasmeht/angular-image:$RUN_NUMBER+g" Deployments/
           # cat deployment.yml
