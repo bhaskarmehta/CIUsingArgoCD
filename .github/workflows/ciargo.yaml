@@ -7,7 +7,7 @@ on:
      branches: ['main']        
 
 jobs:
-  Deploy_On_Cluster:
+  Docker_Image:
     name: Deploy Application On K8s Cluster
     runs-on: ubuntu-latest
     steps:
@@ -31,7 +31,7 @@ jobs:
           push: true
           tags: bhasmeht/angular-image:${{ github.run_number }}    # :${{ steps.new_tag.outputs.tag }}
   modifygit:
-    needs: docker
+    needs: Docker_Image
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
