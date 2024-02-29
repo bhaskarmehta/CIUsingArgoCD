@@ -8,7 +8,7 @@
 </nav>
 <form [formGroup]="equipmentForm"  (ngSubmit)="equipmentAdded()"  class="border p-5">
   <div class="row mb-3">
-    <label for="equipmentname" class="form-label" class="required">Equipment Name</label>
+    <label for="equipmentname" class="form-label" class="required">Equipments Name</label>
     <input type="text" class="form-control" id="equipmentname" formControlName="equipmentname">
     <div class="form-text text-danger" *ngIf="equipmentName.errors?.['minlength'] && (equipmentName.dirty || equipmentName.touched)">
         Please Enter Equipment Name of atleast 2 characters
